@@ -1,0 +1,215 @@
+#header-img {
+    width: 40vw;
+}
+
+body{
+    margin:0;
+}
+
+#header {
+    width: 100%;
+    display: flex;
+    align-items:center;
+    position:fixed;
+    background-color: wheat;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav-bar {
+    width: 100%;
+}
+
+.sign-up-page {
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-form {
+    text-align: center;
+}
+
+.container1 {
+    height: 15rem;
+    display: grid;
+    padding: 2rem;
+    justify-content: center;
+    align-items: left;
+    grid-template-columns: 100px 400px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 20px;
+}
+
+.item {
+    text-align: left;
+}
+
+#itemLogo {
+    height: 3rem;
+    width: 3rem;
+    align-items: center;
+}
+
+#itemHeader {
+    font-weight: bold;
+    margin:0px;
+    padding: 0px;
+}
+
+#itemPara {
+    font-size: 0.8rem;
+}
+
+.video-page {
+    height: 500px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#training{
+    height: 600px;
+    background-image: url("https://images.unsplash.com/photo-1558611848-73f7eb4001a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerFlex {
+    display: flex;
+}
+
+.containerFlex div{
+    border: 1px #ccc solid;
+    padding: 1rem;
+    background-color: white;
+}
+.package1 {
+    flex: 1;
+}
+.package2 {
+    flex: 1;
+}
+.package3 {
+    flex: 1;
+}
+
+#apparel{
+    height: 600px;
+    background-image: url("https://squatwolf.com/wp-content/uploads/2018/08/IMG_0383-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact{
+    height: 600px;
+    background-image: url("https://media2.s-nbcnews.com/j/newscms/2017_36/2144546/170905-working-out-group-ac-512p_2b5db137b66bedb7f1d96c24b8ca1b8a.fit-760w.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+      display: none;
+    }
+}
+
+#submit {
+    border-radius: 6px;
+    color: #fff;
+    background-size: 200%;
+    cursor: pointer;
+    width: 10em;
+    height: 2em;
+    background-image: linear-gradient(to left, #FFC312, #EE5A24, #FFC312);
+    transition:  0.6s;
+}
+
+#submit:hover {
+    background-position: right;
+}
+
+#select {
+    position:relative;
+    display:inline-block;
+    padding: 15px 30px;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+#select:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: .5s;
+}
+
+a span{
+    position:absolute;
+    display: block;
+}
+a span:nth-child(1){
+    top:0;
+    left:-100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+a:hover span:nth-child(1){
+    left:100%;
+    transition: .5s;
+}
+a span:nth-child(2){
+    top:-100%;
+    right:0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+a:hover span:nth-child(2){
+    top:100%;
+    transition: .5s;
+    transition-delay: 0.125s;
+}
+a span:nth-child(3){
+    bottom:0;
+    right:-100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+a:hover span:nth-child(3){
+    right:100%;
+    transition: .5s;
+    transition-delay: 0.25s;
+}
+a span:nth-child(4){
+    bottom:-100%;
+    left:0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+}
+a:hover span:nth-child(4){
+    bottom:100%;
+    transition: .5s;
+    transition-delay: 0.375s;
+}
